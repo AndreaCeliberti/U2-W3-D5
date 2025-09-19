@@ -10,7 +10,6 @@ const productId = params.get("id");
 if (productId) {
   document.getElementById("product-id").value = productId;
 
-  // Simula click su "Carica Prodotto"
   document.getElementById("button-addon2").click();
 }
 
@@ -79,7 +78,6 @@ document.getElementById("change-form").addEventListener("click", async () => {
 
     const prodotto = await response.json();
 
-    // Precompila il form
     const form = document.getElementById("change-form");
     form.name.value = prodotto.name || "";
     form.description.value = prodotto.description || "";

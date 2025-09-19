@@ -46,11 +46,12 @@ const getProduct = () => {
                       <p class="card-text">
                         ${products.description}
                       </p>
-                      <small class="">${products.price}€</small>
+                      <small class="">Prezzo ${products.price}€</small>
                       <div
                         class="d-flex justify-content-between align-items-center"
                       >
                        <div class="btn-group">
+                       <a href="#" class="btn btn-sm btn-outline-success">Aggiungi al Carrello</a>
                          <a href="dettagli.html?id=${products._id}" class="btn btn-sm btn-outline-primary">Scopri di più</a>
                           <a href="back-off.html?id=${products._id}" class="btn btn-sm btn-outline-warning">Modifica</a>
                           <button type="button" class="hideBtn btn btn-sm btn-outline-danger">Nascondi</button>
