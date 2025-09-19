@@ -36,7 +36,7 @@ const getProduct = () => {
                 
                   
                     <img class="img-fluid object-fit-cover" style="height: 200px;" 
-                      src="${products.imgUrl}"
+                      src="${products.imageUrl}"
                     />
                     <div class="card-body">
                       <h5 class="card-title">${products.name}</h5>
@@ -46,24 +46,16 @@ const getProduct = () => {
                       <p class="card-text">
                         ${products.description}
                       </p>
+                      <small class="">${products.price}€</small>
                       <div
                         class="d-flex justify-content-between align-items-center"
                       >
-                        <div class="btn-group">
-                          <button
-                            type="button"
-                            class="btn btn-sm btn-outline-secondary"
-                          >
-                            View
-                          </button>
-                          <button
-                            type="button"
-                            class="hideBtn btn btn-sm btn-outline-secondary"
-                          >
-                            Hide
-                            </button>
-                            </div>
-                            <small class="text-muted">${products.price}</small>
+                       <div class="btn-group">
+                         <a href="dettagli.html?id=${products._id}" class="btn btn-sm btn-outline-primary">Scopri di più</a>
+                          <a href="back-off.html?id=${products._id}" class="btn btn-sm btn-outline-warning">Modifica</a>
+                          <button type="button" class="hideBtn btn btn-sm btn-outline-danger">Nascondi</button>
+                      </div>
+
                             </div>
                             </div>
                             

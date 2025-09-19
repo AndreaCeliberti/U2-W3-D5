@@ -4,6 +4,15 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/`, {
       "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGNkMGQ4OTZmMzAyMjAwMTUxMDgwY2IiLCJpYXQiOjE3NTgyNjg4MTAsImV4cCI6MTc1OTQ3ODQxMH0.LcrCflFm5XXuR7qw1ePLI0A5nXGptRP2VN7Q9NImD9A",
   },
 });
+const params = new URLSearchParams(window.location.search);
+const productId = params.get("id");
+
+if (productId) {
+  document.getElementById("product-id").value = productId;
+
+  // Simula click su "Carica Prodotto"
+  document.getElementById("button-addon2").click();
+}
 
 const URL = `https://striveschool-api.herokuapp.com/api/product/`;
 
@@ -86,7 +95,7 @@ document.getElementById("change-form").addEventListener("click", async () => {
 });
 
 // Invia le modifiche via PUT
-document.getElementById("change-form").addEventListener("submit", async function (event) {
+document.getElementById("button-addon2").addEventListener("submit", async function (event) {
   event.preventDefault();
 
   const form = event.target;
