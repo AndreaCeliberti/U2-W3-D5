@@ -25,7 +25,7 @@ const getProduct = () => {
       const row = document.getElementById("cardRow");
       row.innerHTML = "";
 
-      product.forEach((product) => {
+      product.forEach((products) => {
         const col = document.createElement("div");
         col.className = "col col-md-4 col-xl-3";
 
