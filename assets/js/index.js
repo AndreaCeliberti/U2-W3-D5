@@ -36,15 +36,15 @@ const getProduct = () => {
                 
                   
                     <img class="img-fluid object-fit-cover" style="height: 200px;" 
-                      src="${product.imgUrl}"
+                      src="${products.imgUrl}"
                     />
                     <div class="card-body">
-                      <h5 class="card-title">${product.name}</h5>
+                      <h5 class="card-title">${products.name}</h5>
                       <p class="card-text">
-                        ${product.brand}
+                        ${products.brand}
                       </p>
                       <p class="card-text">
-                        ${product.description}
+                        ${products.description}
                       </p>
                       <div
                         class="d-flex justify-content-between align-items-center"
@@ -63,7 +63,7 @@ const getProduct = () => {
                             Hide
                             </button>
                             </div>
-                            <small class="text-muted">${product.price}</small>
+                            <small class="text-muted">${products.price}</small>
                             </div>
                             </div>
                             
@@ -88,3 +88,4 @@ const getProduct = () => {
       alert(error);
     });
 };
+getProduct();
