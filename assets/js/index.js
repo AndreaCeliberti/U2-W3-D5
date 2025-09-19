@@ -38,7 +38,7 @@ const getProduct = () => {
                     <img class="img-fluid object-fit-cover" style="height: 200px;" 
                       src="${products.imageUrl}"
                     />
-                    <div class="card-body">
+                    <div class="card-body p-1">
                       <h5 class="card-title">${products.name}</h5>
                       <p class="card-text">
                         ${products.brand}
@@ -50,13 +50,14 @@ const getProduct = () => {
                       <div
                         class="d-flex justify-content-between align-items-center"
                       >
+                      <div class="btn-toolbar">
                        <div class="btn-group">
-                       <a href="#" class="btn btn-sm btn-outline-success">Aggiungi al Carrello</a>
-                         <a href="dettagli.html?id=${products._id}" class="btn btn-sm btn-outline-primary">Scopri di più</a>
-                          <a href="back-off.html?id=${products._id}" class="btn btn-sm btn-outline-warning">Modifica</a>
+                       <button href="#" class="btn btn-sm btn-outline-success">Aggiungi al Carrello</button>
+                         <button href="dettagli.html?id=${products._id}" class="btn btn-sm btn-outline-primary">Scopri di più</button>
+                          <button href="back-off.html?id=${products._id}" class="btn btn-sm btn-outline-warning">Modifica</button>
                           <button type="button" class="hideBtn btn btn-sm btn-outline-danger">Nascondi</button>
                       </div>
-
+                      </div>
                             </div>
                             </div>
                             
